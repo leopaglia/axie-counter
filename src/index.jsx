@@ -15,10 +15,3 @@ ReactDOM.render(
 )
 
 serviceWorkerRegistration.register()
-
-if (
-  window.matchMedia('(display-mode: standalone)').matches ||
-  !!window.navigator.standalone
-) {
-  window.resizeTo(540, 1250)
-}

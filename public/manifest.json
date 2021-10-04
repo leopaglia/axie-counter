@@ -19,7 +19,14 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "related_applications": [
+    {
+      "platform": "webapp",
+      "url": "https://leopaglia.github.io/axie-counter/manifest.json"
+    }
+  ],
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff"
