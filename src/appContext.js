@@ -101,6 +101,20 @@ export const Provider = ({ children }) => {
     setRound(round + 1)
   }
 
+  const resetCards = (axieIdx) => {
+    const usedCardsObj = { ...usedCards }
+
+    setUsedCards(
+      Object.values({
+        ...usedCardsObj,
+        [axieIdx * 4 + 0]: [false, false],
+        [axieIdx * 4 + 1]: [false, false],
+        [axieIdx * 4 + 2]: [false, false],
+        [axieIdx * 4 + 3]: [false, false],
+      })
+    )
+  }
+
   const resetAll = () => {
     setEnergyCount(INITIAL_ENERGY)
     setCardCount(INITIAL_CARDS)
@@ -124,6 +138,7 @@ export const Provider = ({ children }) => {
         endRound,
         axiesAlive,
         toggleAxieAlive,
+        resetCards,
         resetAll,
         MAX_ENERGY,
       }}

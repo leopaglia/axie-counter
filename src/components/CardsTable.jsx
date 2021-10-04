@@ -3,7 +3,8 @@ import { useAppContext } from '../appContext'
 import './CardsTable.css'
 
 const CardsTable = () => {
-  const { usedCards, toggleCard, axiesAlive, toggleAxieAlive } = useAppContext()
+  const { usedCards, toggleCard, axiesAlive, toggleAxieAlive, resetCards } =
+    useAppContext()
 
   const iconsMap = {
     0: { src: 'img/teeth.png', alt: 'mouth' },
@@ -50,13 +51,23 @@ const CardsTable = () => {
                   {card ? 'X' : ''}
                 </td>
               ))}
-              {rowIdx % 4 === 0 ? (
+              {rowIdx % 4 === 0 && (
+                <td className="kill-btn" onClick={() => resetCards(rowIdx / 4)}>
+                  <img
+                    height={40}
+                    width={50}
+                    src="img/refresh.png"
+                    alt="refresh"
+                  />
+                </td>
+              )}
+              {rowIdx % 4 === 1 && (
                 <td
                   className="kill-btn"
-                  rowSpan={4}
-                  onClick={() => toggleAxieAlive(rowIdx / 4)}
+                  rowSpan={3}
+                  onClick={() => toggleAxieAlive((rowIdx - 1) / 4)}
                 >
-                  {axiesAlive[Math.floor(rowIdx / 4)] ? (
+                  {axiesAlive[Math.floor((rowIdx - 1) / 4)] ? (
                     <img
                       height={40}
                       width={50}
@@ -67,7 +78,7 @@ const CardsTable = () => {
                     <img height={40} src="img/dead.png" alt="dead" />
                   )}
                 </td>
-              ) : null}
+              )}
             </tr>
             {rowIdx % 4 === 3 && rowIdx < 11 && (
               <tr key={`divider-${Math.floor(rowIdx / 4)}`}>

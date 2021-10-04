@@ -1,4 +1,4 @@
-import { useEffect, useState } from 'react'
+// import { useEffect, useState } from 'react'
 import CardsCounter from '../components/CardsCounter'
 import CardsTable from '../components/CardsTable'
 import EnergyCounter from '../components/EnergyCounter'
@@ -15,24 +15,24 @@ const App = () => {
     window.resizeTo(540, 1250)
   }
 
-  const [showInstallButton, setShowInstallButton] = useState(false)
-  const [showOpenInAppButton, setShowOpenInAppButton] = useState(false)
+  // const [showInstallButton, setShowInstallButton] = useState(false)
+  // const [showOpenInAppButton, setShowOpenInAppButton] = useState(false)
 
-  useEffect(() => {
-    if ('getInstalledRelatedApps' in navigator) {
-      navigator.getInstalledRelatedApps().then((installed) => {
-        if (!launchedAsApp) {
-          if (!installed.length) setShowInstallButton(true)
-          else setShowOpenInAppButton(true)
-        }
-      })
-    }
-  }, [])
+  // useEffect(() => {
+  //   if ('getInstalledRelatedApps' in navigator) {
+  //     navigator.getInstalledRelatedApps().then((installed) => {
+  //       if (!launchedAsApp) {
+  //         if (!installed.length) setShowInstallButton(true)
+  //         else setShowOpenInAppButton(true)
+  //       }
+  //     })
+  //   }
+  // }, [])
 
   return (
     <div className="app">
-      {showInstallButton && <button>Install as App</button>}
-      {showOpenInAppButton && <button>Open App</button>}
+      {/* {showInstallButton && <button>Install as App</button>}
+      {showOpenInAppButton && <button>Open App</button>} */}
       <RoundCounter />
       <EnergyCounter />
       <hr />
