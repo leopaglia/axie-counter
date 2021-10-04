@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/axie-counter/static/css/main.fa8252f2.chunk.css",
-    "main.js": "/axie-counter/static/js/main.51f379ce.chunk.js",
-    "main.js.map": "/axie-counter/static/js/main.51f379ce.chunk.js.map",
+    "main.js": "/axie-counter/static/js/main.56b32097.chunk.js",
+    "main.js.map": "/axie-counter/static/js/main.56b32097.chunk.js.map",
     "runtime-main.js": "/axie-counter/static/js/runtime-main.ab58aad2.js",
     "runtime-main.js.map": "/axie-counter/static/js/runtime-main.ab58aad2.js.map",
     "static/js/2.58f9fb62.chunk.js": "/axie-counter/static/js/2.58f9fb62.chunk.js",
@@ -17,6 +17,6 @@
     "static/js/runtime-main.ab58aad2.js",
     "static/js/2.58f9fb62.chunk.js",
     "static/css/main.fa8252f2.chunk.css",
-    "static/js/main.51f379ce.chunk.js"
+    "static/js/main.56b32097.chunk.js"
   ]
 }
