@@ -7,7 +7,7 @@ const EnergyCounter = () => {
 
   return (
     <div className="energy-counter">
-      <img height="60" src="/img/energy.png" alt="energy" />
+      <img height="60" src="img/energy.png" alt="energy" />
 
       <h3>
         {energyCount} / {MAX_ENERGY}

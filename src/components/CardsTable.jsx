@@ -6,10 +6,10 @@ const CardsTable = () => {
   const { usedCards, toggleCard, axiesAlive, toggleAxieAlive } = useAppContext()
 
   const iconsMap = {
-    0: { src: '/img/teeth.png', alt: 'mouth' },
-    1: { src: '/img/horns.png', alt: 'horns' },
-    2: { src: '/img/back.png', alt: 'back' },
-    3: { src: '/img/tail.png', alt: 'tail' },
+    0: { src: 'img/teeth.png', alt: 'mouth' },
+    1: { src: 'img/horns.png', alt: 'horns' },
+    2: { src: 'img/back.png', alt: 'back' },
+    3: { src: 'img/tail.png', alt: 'tail' },
   }
 
   return (
