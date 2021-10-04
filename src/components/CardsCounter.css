@@ -1,0 +1,9 @@
+.cards-counter {
+  display: flex;
+  align-items: center;
+}
+
+.cards-counter small {
+  margin-left: 8px;
+  color: red;
+}

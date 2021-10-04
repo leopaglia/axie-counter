@@ -1,6 +1,7 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Axie counter",
+  "name": "Axie counter",
+  "description": "Tools for counting cards and energy in-game",
   "icons": [
     {
       "src": "favicon.ico",

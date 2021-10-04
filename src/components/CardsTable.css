@@ -1,0 +1,36 @@
+.cards-table {
+  width: 500px;
+  user-select: none;
+}
+
+.cards-table td,
+.cards-table th {
+  border: 1px solid black;
+  height: 40px;
+}
+
+.cards-table td.disabled {
+  background-color: lightgrey;
+}
+
+.cards-table td.used {
+  box-shadow: rgba(130, 130, 130, 0.25) 0px 30px 40px -4px inset;
+}
+
+.cards-table td.potential-draw {
+  box-shadow: rgba(127, 255, 0, 0.25) 0px 30px 40px -4px inset;
+}
+
+.cards-table .icon,
+.cards-table .kill-btn {
+  width: 40px;
+}
+
+.cards-table .divider {
+  height: 10px;
+  border: none;
+}
+
+.cards-table .divider hr {
+  margin: 0;
+}
