@@ -6,7 +6,7 @@ import ResetGame from '../components/ResetGame'
 import RoundCounter from '../components/RoundCounter'
 import './App.css'
 
-const launchedAsApp = () =>
+const launchedAsApp =
   window.matchMedia('(display-mode: standalone)').matches ||
   !!window.navigator.standalone
 
@@ -21,7 +21,6 @@ const App = () => {
   useEffect(() => {
     if ('getInstalledRelatedApps' in navigator) {
       navigator.getInstalledRelatedApps().then((installed) => {
-        console.log({ installed })
         if (!launchedAsApp) {
           if (!installed.length) setShowInstallButton(true)
           else setShowOpenInAppButton(true)
@@ -32,8 +31,8 @@ const App = () => {
 
   return (
     <div className="app">
-      {showInstallButton && <button>Install</button>}
-      {showOpenInAppButton && <button>Open</button>}
+      {showInstallButton && <button>Install as App</button>}
+      {showOpenInAppButton && <button>Open App</button>}
       <RoundCounter />
       <EnergyCounter />
       <hr />
