@@ -1,22 +1,22 @@
 {
   "files": {
     "main.css": "/axie-counter/static/css/main.b51ed184.chunk.css",
-    "main.js": "/axie-counter/static/js/main.b4d7b66d.chunk.js",
-    "main.js.map": "/axie-counter/static/js/main.b4d7b66d.chunk.js.map",
+    "main.js": "/axie-counter/static/js/main.81ee3233.chunk.js",
+    "main.js.map": "/axie-counter/static/js/main.81ee3233.chunk.js.map",
     "runtime-main.js": "/axie-counter/static/js/runtime-main.ab58aad2.js",
     "runtime-main.js.map": "/axie-counter/static/js/runtime-main.ab58aad2.js.map",
-    "static/js/2.b7f42dbd.chunk.js": "/axie-counter/static/js/2.b7f42dbd.chunk.js",
-    "static/js/2.b7f42dbd.chunk.js.map": "/axie-counter/static/js/2.b7f42dbd.chunk.js.map",
+    "static/js/2.58f9fb62.chunk.js": "/axie-counter/static/js/2.58f9fb62.chunk.js",
+    "static/js/2.58f9fb62.chunk.js.map": "/axie-counter/static/js/2.58f9fb62.chunk.js.map",
     "index.html": "/axie-counter/index.html",
     "service-worker.js": "/axie-counter/service-worker.js",
     "service-worker.js.map": "/axie-counter/service-worker.js.map",
     "static/css/main.b51ed184.chunk.css.map": "/axie-counter/static/css/main.b51ed184.chunk.css.map",
-    "static/js/2.b7f42dbd.chunk.js.LICENSE.txt": "/axie-counter/static/js/2.b7f42dbd.chunk.js.LICENSE.txt"
+    "static/js/2.58f9fb62.chunk.js.LICENSE.txt": "/axie-counter/static/js/2.58f9fb62.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.ab58aad2.js",
-    "static/js/2.b7f42dbd.chunk.js",
+    "static/js/2.58f9fb62.chunk.js",
     "static/css/main.b51ed184.chunk.css",
-    "static/js/main.b4d7b66d.chunk.js"
+    "static/js/main.81ee3233.chunk.js"
   ]
 }
